@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AirbnbAutomation">
+    <listeners>
+        <listener class-name = "util.AnnotationTransformer"/>
+    </listeners>
+    <test name = "AirbnbLogin">
+        <classes>
+            <class name = "AirbnbTest.AirbnbLoginTest"/>
+        </classes>
+    </test>
+    <test name = "AirbnbSearch">
+        <classes>
+            <class name = "AirbnbTest.AirbnbLoginTest"/>
+        </classes>
+    </test>
+    <test name="FlexibleSearch">
+        <classes>
+            <class name = "AirbnbTest.FlexibleSearchTest"/>
+        </classes>
+    </test>
+    <test name="ForgotPassword">
+        <classes>
+            <class name="AirbnbTest.ForgotPassTest"/>
+        </classes>
+    </test>
+    <test name = "UpdateAccount">
+        <classes>
+            <class name = "AirbnbTest.UpdateAccountTest"/>
+        </classes>
+    </test>
+</suite>

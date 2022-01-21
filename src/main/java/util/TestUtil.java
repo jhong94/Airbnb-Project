@@ -9,6 +9,8 @@ import org.testng.Assert;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
+import java.util.Locale;
 
 public class TestUtil extends TestBase {
     public void goTo(String url) {
@@ -20,7 +22,44 @@ public class TestUtil extends TestBase {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
 
-//    public void waitForDropDown(By element){
+    public void clickElement(By element) {
+        WebElement localElement = waitForElement(element);
+        localElement.click();
+    }
+
+    public void dropDown(By element, int num) {
+        WebElement dropDown = driver.findElement(element);
+        Select objSelect = new Select(dropDown);
+//        objSelect.selectByVisibleText(text.toLowerCase());
+        objSelect.selectByIndex(num);
+    }
+
+    public void enterText(By element, String text) {
+        WebElement localElement = waitForElement(element);
+        localElement.sendKeys(text);
+    }
+
+    public void multiClick(By element){
+        for (int i = 0; i < 3; i++){
+            WebElement localElement = waitForElement(element);
+            localElement.click();
+        }
+    }
+
+    public void screenShot() throws IOException {
+        Date currentDate = new Date();
+        String screenshotFileName = currentDate.toString().replace(" ", "-").replace(":", "-");
+        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(screenshotFile, new File(".//screenshot//" + screenshotFileName + ".png"));
+    }
+
+    public void validateText(By element, String getText){
+        WebElement localElement = waitForElement(element);
+        String actualText = localElement.getText();
+        Assert.assertEquals(actualText.toLowerCase(), getText.toLowerCase());
+    }
+
+    //    public void waitForDropDown(By element){
 //        WebDriverWait wait = new WebDriverWait(driver, 5);
 //        Select drpList = new Select(driver.findElement(By.xpath("//select[@id='dropdown']")));
 //        drpList.selectByValue("1");
@@ -45,34 +84,5 @@ public class TestUtil extends TestBase {
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         alert.sendKeys("Hello");
         alert.accept();
-    }
-
-    public void clickElement(By element) {
-        WebElement localElement = waitForElement(element);
-        localElement.click();
-//        driver.findElement(element).click();
-    }
-
-    public void enterText(By element, String text) {
-        WebElement localElement = waitForElement(element);
-        localElement.sendKeys(text);
-//        driver.findElement(element).sendKeys(text);
-    }
-
-    public void screenShot() throws IOException {
-        Date currentDate = new Date();
-        String screenshotFileName = currentDate.toString().replace(" ", "-").replace(":", "-");
-        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenshotFile, new File(".//screenshot//" + screenshotFileName + ".png"));
-    }
-
-    public void validateText(By element, String getText){
-        WebElement localElement = waitForElement(element);
-        String actualText = localElement.getText();
-        Assert.assertEquals(actualText.toLowerCase(), getText.toLowerCase());
-//        get text
-//        String actualText = driver.findElement(element).getText();
-//
-//        use assert
     }
 }
