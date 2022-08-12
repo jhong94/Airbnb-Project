@@ -17,6 +17,12 @@ public class TestUtil extends TestBase {
         driver.navigate().to(url);
     }
 
+    public void jsClick(String name, By element){
+        WebElement localElement = driver.findElement(element);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        localElement.click();
+    }
+
     public WebElement waitForElement(By element) {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
@@ -40,7 +46,7 @@ public class TestUtil extends TestBase {
     }
 
     public void multiClick(By element){
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i <= 3; i++){
             WebElement localElement = waitForElement(element);
             localElement.click();
         }

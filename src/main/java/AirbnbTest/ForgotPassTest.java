@@ -7,10 +7,11 @@ import util.TestBase;
 
 public class ForgotPassTest extends TestBase {
 
+    ForgotPasswordPage page = new ForgotPasswordPage();
+    AirbnbLoginPage login = new AirbnbLoginPage();
+
     @Test
     public void validPasswordReset(){
-        ForgotPasswordPage page = new ForgotPasswordPage();
-        AirbnbLoginPage login = new AirbnbLoginPage();
 
         login.goToAirbnb();
         page.enterEmail();
@@ -19,8 +20,6 @@ public class ForgotPassTest extends TestBase {
 
     @Test
     public void invalidPasswordReset(){
-        ForgotPasswordPage page = new ForgotPasswordPage();
-        AirbnbLoginPage login = new AirbnbLoginPage();
 
         login.goToAirbnb();
         page.enterEmail();

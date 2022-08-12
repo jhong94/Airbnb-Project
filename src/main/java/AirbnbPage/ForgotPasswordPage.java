@@ -11,7 +11,7 @@ public class ForgotPasswordPage extends TestBase {
     By enterEmail = By.id("email-login-email");
     By pressCont = By.className("_k8bxoxz");
     By forgotButton = By.xpath("//a[@class='_1mvt6xpm']");
-    By enterEmailForPw = By.xpath("//form[@data-testid='auth-form']//div//input");
+    By enterEmailForPw = By.xpath("//div[@class='_js9i23']//input[@class='_1vf8o5y']");
     By resetLinkButton = By.xpath("//button[@class='_1932igt4']");
     By actualText = By.xpath("//span[@class='alert-message']");
     By invalidActual = By.xpath("//span[@class='alert-message']");
@@ -24,7 +24,7 @@ public class ForgotPasswordPage extends TestBase {
     public void resetPassword(){
         String expectedText = "a link to reset your password has been sent to archaic.undated-05@icloud.com.";
         ut.clickElement(forgotButton);
-        ut.waitForElement(enterEmailForPw);
+        ut.jsClick("arguments[0].scrollIntoView(true);", enterEmailForPw);
         ut.enterText(enterEmailForPw, "archaic.undated-05@icloud.com");
         ut.clickElement(resetLinkButton);
         ut.validateText(actualText, expectedText);

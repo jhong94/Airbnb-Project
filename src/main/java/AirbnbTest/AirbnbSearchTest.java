@@ -6,11 +6,18 @@ import util.TestBase;
 
 public class AirbnbSearchTest extends TestBase {
 
+    AirbnbSearchPage search = new AirbnbSearchPage();
+
     @Test
     public void validSearchLocation() throws InterruptedException {
-        AirbnbSearchPage search = new AirbnbSearchPage();
         search.goToAirbnb();
-        search.searchForFlorida();
+        search.searchForSydney();
         Thread.sleep(3000);
+    }
+
+    @Test
+    public void invalidSearchLocation(){
+        search.goToAirbnb();
+        search.searchForFakePlace();
     }
 }

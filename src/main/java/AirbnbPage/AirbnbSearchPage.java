@@ -13,29 +13,48 @@ public class AirbnbSearchPage extends TestBase {
 
     By searchBarLocator = By.className("_1xq16jy");
     By dropDownLocator = By.id("bigsearch-query-location-suggestion-0");
-    By searchButton = By.xpath("//div[@class='_w64aej']//button");
-    By priceRange = By.xpath("//div[@data-testid='menuItemButton-price_range']");
-    By minPrice = By.id("price_filter_min");
-    By maxPrice = By.id("price_filter_max");
-    By savePrice = By.xpath("//button[@class='_yy7zf84']");
-
-    By checkInLocator = By.className("_wtz1co");
     By nextButtonLocator = By.xpath("//div[@class='_13tn83am']//button");
-    By verifyMonth = By.xpath("//h2[@class='_116xafi']");
+    By checkInDate = By.xpath("//table//tbody//tr[3]//td[2]//div[contains(text(), '11')]");
+    By checkOutDate = By.xpath("//table//tbody//tr[3]//td[7]//div[contains(text(), '16')]");
+    By guestCount = By.xpath("//div[@class='_seuyf']//div[@class='_uh2dzp']");
+    By increaseGuest = By.xpath("//button[@data-testid='stepper-adults-increase-button']");
+    By searchButton = By.xpath("//div[@class='_w64aej']//button");
+    By actualText = By.xpath("//h1[@class='_78tyg5']");
+
+    By checkIn = By.xpath("//div[@class='_j8gg2a']//div//div[contains(text(), 'Check in')]");
+    By checkInvalidDate = By.xpath("//table//tbody//tr[4]//td[7]//div[contains(text(), '22')]");
+    By checkOutInvalid = By.xpath("//table//tbody//tr[5]//td[7]//div[contains(text(), '29')]");
+    By invalidActualText = By.xpath("//h2[@class='_1mafdrow']");
 
 
     public void goToAirbnb(){
         ut.goTo(baseURL);
     }
 
-    public void searchForFlorida() throws InterruptedException {
-        ut.enterText(searchBarLocator, "florida");
+    public void searchForSydney() throws InterruptedException {
+        String expectedText = "300+ stays in Sydney";
+
+        ut.enterText(searchBarLocator, "sydney");
+        ut.clickElement(dropDownLocator);
+        ut.multiClick(nextButtonLocator);
+        ut.clickElement(checkInDate);
+        ut.clickElement(checkOutDate);
+        ut.clickElement(guestCount);
+        ut.multiClick(increaseGuest);
         ut.clickElement(searchButton);
-        ut.clickElement(priceRange);
+        ut.validateText(actualText, expectedText);
+    }
 
+    public void searchForFakePlace(){
+        String expectedText = "No results";
 
-
-
-        Thread.sleep(4000);
+        ut.enterText(searchBarLocator, "Gotham City, Gotham");
+        ut.clickElement(checkIn);
+        ut.clickElement(checkInvalidDate);
+        ut.clickElement(checkOutInvalid);
+        ut.clickElement(guestCount);
+        ut.multiClick(increaseGuest);
+        ut.clickElement(searchButton);
+        ut.validateText(invalidActualText, expectedText);
     }
 }

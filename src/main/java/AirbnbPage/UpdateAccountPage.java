@@ -12,7 +12,7 @@ public class UpdateAccountPage extends TestBase {
     By paymentBtn = By.xpath("//div[contains(text(), 'Payments & payouts')]");
     By addPayment = By.xpath("//span[contains(text(), 'Add payment method')]");
 
-    public void updateInfo() throws InterruptedException {
+    public void updateInvalidInfo() throws InterruptedException {
         ut.clickElement(dropDownMenu);
         ut.clickElement(accBtn);
         ut.clickElement(paymentBtn);

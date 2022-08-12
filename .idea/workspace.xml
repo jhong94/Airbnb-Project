@@ -6,23 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="692569cc-402b-438a-a81e-b6479a1707cb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ActionButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/ActionButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AlertAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/AlertAutomation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CapturingScreenShot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/CapturingScreenShot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DropDownAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/DropDownAutomation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GoogleAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/GoogleAutomation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MoMediaTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/MoMediaTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RadioButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/RadioButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/TableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirbnbPage/AirbnbLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirbnbPage/AirbnbLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirbnbPage/AirbnbSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirbnbPage/AirbnbSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirbnbPage/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirbnbPage/ForgotPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirbnbPage/UpdateAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirbnbPage/UpdateAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirbnbTest/AirbnbLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirbnbTest/AirbnbLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirbnbTest/AirbnbSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirbnbTest/AirbnbSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirbnbTest/ForgotPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirbnbTest/ForgotPassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirbnbTest/UpdateAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirbnbTest/UpdateAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ActionButtonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AlertAutomation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CapturingScreenShot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DropDownAutomation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GoogleAutomation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MoMediaTesting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RadioButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirbnbPage/AirbnbLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AirbnbPage/AirbnbLoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirbnbPage/AirbnbSearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AirbnbPage/AirbnbSearchPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirbnbPage/ForgotPasswordPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AirbnbPage/ForgotPasswordPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirbnbPage/updateAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AirbnbPage/updateAccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirbnbTest/AirbnbLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AirbnbTest/AirbnbLoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirbnbTest/AirbnbSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AirbnbTest/AirbnbSearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirbnbTest/ForgotPassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AirbnbTest/ForgotPassTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AirbnbTest/updateAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AirbnbTest/updateAccountTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/util/TestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/TestUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/RetryAnalyzer" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -66,7 +69,7 @@
       <recent name="RetryAnalyzer" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.ForgotPassTest.validPasswordReset">
     <configuration name="AirbnbLoginTest.validLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation" />
       <extension name="coverage">
@@ -85,7 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlexibleSearchTest.invalidFlexibleSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AirbnbSearchTest.invalidSearchLocation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +97,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="AirbnbTest" />
-      <option name="MAIN_CLASS_NAME" value="AirbnbTest.FlexibleSearchTest" />
-      <option name="METHOD_NAME" value="invalidFlexibleSearch" />
+      <option name="MAIN_CLASS_NAME" value="AirbnbTest.AirbnbSearchTest" />
+      <option name="METHOD_NAME" value="invalidSearchLocation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlexibleSearchTest.validFlexibleSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AirbnbSearchTest.validSearchLocation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation" />
       <extension name="coverage">
         <pattern>
@@ -112,8 +115,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="AirbnbTest" />
-      <option name="MAIN_CLASS_NAME" value="AirbnbTest.FlexibleSearchTest" />
-      <option name="METHOD_NAME" value="validFlexibleSearch" />
+      <option name="MAIN_CLASS_NAME" value="AirbnbTest.AirbnbSearchTest" />
+      <option name="METHOD_NAME" value="validSearchLocation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -121,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GiftCardTest.validGift" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ForgotPassTest.validPasswordReset" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation" />
       <extension name="coverage">
         <pattern>
@@ -130,26 +133,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="AirbnbTest" />
-      <option name="MAIN_CLASS_NAME" value="AirbnbTest.GiftCardTest" />
-      <option name="METHOD_NAME" value="validGift" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OnlineExpTest.validOnlineExp" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AirbnbTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AirbnbTest" />
-      <option name="MAIN_CLASS_NAME" value="AirbnbTest.OnlineExpTest" />
-      <option name="METHOD_NAME" value="validOnlineExp" />
+      <option name="MAIN_CLASS_NAME" value="AirbnbTest.ForgotPassTest" />
+      <option name="METHOD_NAME" value="validPasswordReset" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -177,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ForgotPassTest.validPasswordReset" />
+        <item itemvalue="TestNG.AirbnbSearchTest.invalidSearchLocation" />
+        <item itemvalue="TestNG.AirbnbSearchTest.validSearchLocation" />
+        <item itemvalue="TestNG.AirbnbLoginTest.validLoginTest" />
         <item itemvalue="TestNG.UpdateAccountTest.updatePersonal" />
-        <item itemvalue="TestNG.OnlineExpTest.validOnlineExp" />
-        <item itemvalue="TestNG.GiftCardTest.validGift" />
-        <item itemvalue="TestNG.FlexibleSearchTest.invalidFlexibleSearch" />
-        <item itemvalue="TestNG.FlexibleSearchTest.validFlexibleSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -207,5 +192,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/cucumber-java-skeleton" />
+    </ignored-roots>
   </component>
 </project>

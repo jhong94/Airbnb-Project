@@ -17,7 +17,7 @@ public class AirbnbLoginTest extends TestBase {
     }
 
     @Test
-    public void invalidLoginTest() throws IOException {
+    public void invalidLoginTest() throws IOException, InterruptedException {
         login.goToAirbnb();
         login.invalidLogin();
     }

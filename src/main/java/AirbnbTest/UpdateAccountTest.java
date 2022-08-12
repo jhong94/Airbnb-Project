@@ -16,6 +16,6 @@ public class UpdateAccountTest extends TestBase {
     public void updatePersonal() throws InterruptedException, IOException {
         login.goToAirbnb();
         login.validLogin();
-        update.updateInfo();
+        update.updateInvalidInfo();
     }
 }
